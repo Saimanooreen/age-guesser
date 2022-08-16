@@ -1,0 +1,18 @@
+yearage=int(input("enter your age or birt year\n"))
+isage=False
+isyear=False
+if len(str(yearage))==4:
+    isyear=True
+else:
+    isage=True
+if (yearage<1925 and isyear) :
+    print("You seem to be the oldest person alive")
+    exit()
+if (yearage>2022 and isyear):
+    print("you are not born yet")
+    exit()
+if isage:
+    yearage=2022-yearage
+print(f"You'll be 100 years old in {yearage+100}")
+interestedyear=int(input("Enter the year, you want to your age in\n"))
+print(f"you will be {interestedyear-yearage} years old in {interestedyear}")
